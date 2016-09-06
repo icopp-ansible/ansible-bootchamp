@@ -1,0 +1,5 @@
+---
+- name: Install Bootchamp via Homebrew Cask
+  homebrew_cask:
+    name: bootchamp
+  when: ansible_os_family == "Darwin"
